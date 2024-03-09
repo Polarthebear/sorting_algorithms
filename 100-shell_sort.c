@@ -18,7 +18,7 @@ void swap_(int *a, int *b)
 /**
  * shell_sort - Main entry point
  * Description: Using the shell sort algorithm,
- * 		sort an array of integers in ascending order.
+ *		sort an array of integers in ascending order.
  * @array: Array of integers
  * @size: Size of array
  */
@@ -29,7 +29,7 @@ void shell_sort(int *array, size_t size)
 	if (array == NULL || size < 2)
 		return;
 
-	for (gap = 1; gap < (size/ 3);)
+	for (gap = 1; gap < (size / 3);)
 		gap = gap * 3 + 1;
 
 	for (; gap >= 1; gap /= 3)
